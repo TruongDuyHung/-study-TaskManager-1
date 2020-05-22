@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('','index-customer');
-Route::get('/update', function () {
-    return view('update-information');
+Route::view('','welcome');
+Route::prefix('customer')->group(function () {
+ Route::get('index','CustomerController@index');
+ Route::get('crete','CustomerController@create');
+ Route::post('store','CustomerController@store');
+ Route::get('{id}edit','CustomerController@edit');
+ Route::get('{id}show','CustomerController@show');
+ Route::patch('{id}update','CustomerController@update');
+ Route::delete('{id}','CustomerController@destroy');
 });
-Route::view('/show','show-information');
-Route::view('/add','add-information');

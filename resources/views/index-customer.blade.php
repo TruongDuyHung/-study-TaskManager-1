@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-
-<div class="container">
-    <h2>Customer</h2>
-    <p>Manager Customer</p><span><a href="/add" class="btn-success" >ADD CUSTOMER</a></span>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th class="col-md-2">Firstname</th>
-            <th class="col-md-2">Lastname</th>
-            <th class="col-md-4">Email</th>
-            <th class="col-md-1">Manipulation</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-            <td>
-                <a id="update" href="/update" style="color: darkgreen;border: 1px dotted green">update</a>
-                <a href="/show" style="color: darkgreen;border: 1px dotted green">show</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>
-                <a id="update" href="/update" style="color: darkgreen;border: 1px dotted green">update</a>
-                <a href="/show" style="color: darkgreen;border: 1px dotted green">show</a>
-            </td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-            <td>
-                <a id="update" href="/update" style="color: darkgreen;border: 1px dotted green">update</a>
-                <a href="/show" style="color: darkgreen;border: 1px dotted green">show</a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-
+<h1>Danh sách khách hàng</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Họ và tên</th>
+        <th>Số điện thoại</th>
+        <th>Email</th>
+        <th>Thao tác</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Nguyễn Văn A</td>
+        <td>01234567890</td>
+        <td>email.test@mail.com</td>
+        <td>
+            <a id="show1" href="show1show">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Nguyễn Văn B</td>
+        <td>01234567890</td>
+        <td>email.test@mail.com</td>
+        <td>
+            <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Nguyễn Văn C</td>
+        <td>01234567890</td>
+        <td>email.test@mail.com</td>
+        <td>
+            <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Nguyễn Văn D</td>
+        <td>01234567890</td>
+        <td>email.test@mail.com</td>
+        <td>
+            <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Nguyễn Văn E</td>
+        <td>01234567890</td>
+        <td>email.test@mail.com</td>
+        <td>
+            <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
